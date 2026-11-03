@@ -23,6 +23,7 @@ test("positive: a shopper can choose sizes, add items, and empty the demo bag", 
     .click();
   await expect(page.locator("#bag-count")).toHaveText("1");
   await expect(page.locator("#bag-status")).toContainText("M");
+  await expect(page.locator("#product-feedback")).toContainText("size M");
   await page.locator('input[name="size"][value="L"]').check();
   await page
     .getByRole("button", { name: "Add to demo bag", exact: true })

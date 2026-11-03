@@ -1,18 +1,16 @@
 /* Shared brand tokens. Change these after you agree on your brand direction.
    Both the storefront and the live style guide use this file. */
 :root {
-  --color-paper: #f6f5f0;
-  --color-ink: #171a18;
-  --color-muted: #5a615b;
-  --color-line: #d1d5cc;
-  --color-accent: #e3ef56;
-  --color-soft: #e8eae1;
+  --color-paper: #f7f3e9;
+  --color-ink: #263d34;
+  --color-muted: #546256;
+  --color-line: #bdc4b6;
+  --color-accent: #dfc7b2;
+  --color-soft: #e2e7dc;
   --color-white: #fff;
   --color-danger: #992e28;
-  --font-body:
-    system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
-  --font-display:
-    system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
+  --font-body: arial, helvetica, sans-serif;
+  --font-display: georgia, "Times New Roman", serif;
   --font-mono: ui-monospace, sfmono-regular, consolas, monospace;
   --space-1: 0.5rem;
   --space-2: 1rem;
@@ -209,7 +207,7 @@ p + p {
 }
 
 .wordmark {
-  width: 150px;
+  width: 190px;
   height: auto;
 }
 
@@ -265,16 +263,22 @@ p + p {
 .product-visual {
   position: relative;
   background: var(--color-soft);
+  border: 2px solid var(--color-ink);
+  border-radius: 48% 48% 8px 8px;
+  box-shadow: 14px 14px 0 var(--color-accent);
+  margin: 20px 14px 14px 0;
 }
 
 .visual-label {
-  position: absolute;
   z-index: 1;
   inset: 1.3rem 1.4rem auto;
   display: flex;
-  justify-content: space-between;
   gap: 1rem;
   font-size: 0.6rem;
+  position: static;
+  padding: 28px 28px 0;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .shirt-image {
@@ -282,6 +286,8 @@ p + p {
   height: auto;
   aspect-ratio: 800 / 880;
   object-fit: contain;
+  border-radius: 48% 48% 0 0;
+  padding-top: 30px;
 }
 
 .image-caption {
@@ -290,8 +296,11 @@ p + p {
   justify-content: space-between;
   gap: 1rem;
   padding: 1.2rem 1.4rem;
-  border-top: 1px solid var(--color-line);
   font-size: 0.59rem;
+  border-top: 1px solid var(--color-ink);
+  font-family: var(--font-display);
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .image-caption > :last-child {
@@ -303,10 +312,14 @@ p + p {
 .product-information {
   max-width: 530px;
   padding-block: 1rem;
+  order: -1;
 }
 
 .product-information h1 {
   margin-top: 1.6rem;
+  font-size: clamp(3.5rem, 6.5vw, 6.5rem);
+  letter-spacing: -0.055em;
+  font-weight: 400;
 }
 
 .product-intro {
@@ -444,6 +457,7 @@ legend {
   transition:
     background 150ms ease,
     color 150ms ease;
+  border-radius: 30px;
 }
 
 .button > span[aria-hidden] {
@@ -763,13 +777,14 @@ legend {
 }
 
 .logo-small {
-  width: 110px;
+  width: 190px;
   height: auto;
 }
 
 .logo-mono {
   width: 190px;
-  filter: brightness(0);
+
+  /* SVG artwork is already one color. */
 }
 
 .logo-variant p,
@@ -939,6 +954,76 @@ legend {
   white-space: nowrap;
 }
 
+/* Common Canvas: shared identity components. */
+.type-alternate {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.product-feedback {
+  min-height: 1.6em;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.style-ideas {
+  padding-block: var(--space-5);
+  margin-block: var(--space-4);
+  border-top: 1px solid var(--color-line);
+}
+
+.style-ideas h2 {
+  margin-block: 20px;
+  font-weight: 400;
+}
+
+.ideas-intro {
+  max-width: 580px;
+}
+
+.idea-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.idea-cards article {
+  padding: var(--space-4);
+  border: 1px solid var(--color-line);
+  border-radius: 40px 40px 8px 8px;
+  background: var(--color-soft);
+}
+
+.idea-cards h3 {
+  margin-block: 20px 12px;
+}
+
+.idea-cards p {
+  font-size: 0.88rem;
+}
+
+.idea-number {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+}
+
+@media (width <= 760px) {
+  .idea-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .product-information h1 {
+    font-size: clamp(3.5rem, 13vw, 6rem);
+  }
+
+  .product-visual {
+    max-width: calc(100% - 14px);
+  }
+}
+
 @media (width >= 1600px) {
   .product-section {
     gap: 8rem;
@@ -1026,7 +1111,7 @@ legend {
   }
 
   .wordmark {
-    width: 130px;
+    width: 170px;
   }
 
   .main-nav {
