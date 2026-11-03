@@ -6,10 +6,10 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: Branded storefront and live guide built; checks and learner review in progress.
+- Stage: BRAND-001 kept and merged; publishing in progress.
 - Current feature: `BRAND-001` — first branded storefront and live style guide.
-- Status: In progress on feat/brand-001.
-- Next small decision: Review the checked pull request, then decide whether to keep and merge.
+- Status: Kept; PR #2 merged into main at 1dec4a9.
+- Next small decision: Verify the GitHub Pages deployment and use its live URL for submission.
 
 ## Product boundary
 
@@ -104,4 +104,4 @@ No follow-up is selected. After keeping `BRAND-001`, choose one next cycle: perh
 - Keyboard: “it navigates through the website”; visible focus and keyboard add-to-bag completion not explicitly described.
 - Narrow view: confirmed text and buttons fit on screen after a direct question.
 - No-size check interpretation: “ask them for the size,” following an AI example; assisted evidence.
-- Learner approved the four-point record summary as accurate: “all looks good.” Final keep/merge decision remains pending.
+- Learner approved the four-point record summary as accurate: “all looks good.” Learner approved keeping/merging; PR #2 merge verified at 1dec4a9.

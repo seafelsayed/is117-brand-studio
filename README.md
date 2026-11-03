@@ -1,6 +1,6 @@
 # Common Canvas — IS117 Brand Studio
 
-**Project status:** BRAND-001 implementation is on its feature branch: Common Canvas, a welcoming white-T-shirt brand for college students expressing their style. Storefront, live style guide, researched hero explorations, original SVG logo, and demo bag are built. Prepared checks passed in GitHub CI. [Pull request #2](https://github.com/seafelsayed/is117-brand-studio/pull/2) awaits the learner’s keep/merge decision; publication is pending.
+**Project status:** BRAND-001 is kept and merged into main: Common Canvas, a welcoming white-T-shirt brand for college students expressing their style. Storefront, live style guide, researched hero explorations, original SVG logo, and demo bag are built. Prepared checks passed in GitHub CI. [Pull request #2](https://github.com/seafelsayed/is117-brand-studio/pull/2) is merged. GitHub Pages publication is in progress; the live URL will be added after verification.
 
 **The same white T-shirt can carry very different meanings.** Develop a brand for it with an AI collaborator, then make those decisions visible in a professional website and a live style guide.
 
