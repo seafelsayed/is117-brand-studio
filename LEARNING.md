@@ -2,7 +2,7 @@
 
 AI-drafted task evidence, not a transcript or grade. This file may be public. Approval confirms accuracy, not independent understanding.
 
-- **Feature:** BRAND-001 — kept and merged via PR #2; publication in progress
+- **Feature:** BRAND-001 — kept, merged via PR #2, and published
 - **Date:** 2026-11-02
 - **Conversation context available:** This chat and the bounded referenced IS 117 preview; no unrelated conversation included
 - **Review status:** Learner reviewed the four-point summary below and replied “all looks good.” Reviewed for sharing; keep/merge approval was subsequently received and merge verified.
@@ -22,4 +22,4 @@ AI-drafted task evidence, not a transcript or grade. This file may be public. Ap
 - **SPEC, issue/PR, actual checks and artifacts:** [SPEC.md](SPEC.md), [issue #1](https://github.com/seafelsayed/is117-brand-studio/issues/1), [PR #2](https://github.com/seafelsayed/is117-brand-studio/pull/2), [paired previews](public/explorations/compare.html), [logo board](public/explorations/logo.html).
 - **Actual checks:** Formatting/lint and 7 server tests passed. Local prepared browser suite cannot launch Chromium because macOS sandbox permissions deny it. In Chrome, AI verified no-size error with bag 0 and M submission with bag 1 plus adjacent confirmation. Storefront, guide, and studio phone-width headers/hero renders were inspected at 400px; desktop inspection was partial due browser-control interruptions. [GitHub CI passed](https://github.com/seafelsayed/is117-brand-studio/actions/runs/41558823089/job/125664194028) on c29c54f, including all 10 Chromium browser checks and axe scans.
 
-**Next step:** PR #2 is open and its prepared checks passed. Learner approved keeping/merging and then publishing. PR #2 merge verified at 1dec4a9. Next: verify the live Pages deployment.
+**Next step:** PR #2 is open and its prepared checks passed. Learner approved keeping/merging and then publishing. PR #2 merge verified at 1dec4a9. Published [site](https://seafelsayed.github.io/is117-brand-studio/) verified; no-size and M-add behavior checked live. Next: submit the live URL.

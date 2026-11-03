@@ -6,10 +6,10 @@ This is the durable agreement between the learner and agent. Keep it concise and
 
 ## Current stage
 
-- Stage: BRAND-001 kept and merged; publishing in progress.
+- Stage: BRAND-001 kept, merged, and published.
 - Current feature: `BRAND-001` — first branded storefront and live style guide.
 - Status: Kept; PR #2 merged into main at 1dec4a9.
-- Next small decision: Verify the GitHub Pages deployment and use its live URL for submission.
+- Next small decision: Submit the verified live storefront URL; no follow-up feature selected.
 
 ## Product boundary
 
@@ -105,3 +105,8 @@ No follow-up is selected. After keeping `BRAND-001`, choose one next cycle: perh
 - Narrow view: confirmed text and buttons fit on screen after a direct question.
 - No-size check interpretation: “ask them for the size,” following an AI example; assisted evidence.
 - Learner approved the four-point record summary as accurate: “all looks good.” Learner approved keeping/merging; PR #2 merge verified at 1dec4a9.
+
+### Verified publication
+
+- [Live storefront](https://seafelsayed.github.io/is117-brand-studio/), [style guide](https://seafelsayed.github.io/is117-brand-studio/styleguide.html), [successful publishing run](https://github.com/seafelsayed/is117-brand-studio/actions/runs/41559598925).
+- Published site loaded; no-size submission showed error with bag 0; selecting M produced bag 1 and adjacent confirmation. Verified by AI in the live browser.
