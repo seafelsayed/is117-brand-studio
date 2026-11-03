@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 88" role="img" aria-labelledby="title">
+  <title id="title">Common Canvas logo proposal</title>
+  <g fill="none" stroke="#263d34" stroke-width="4" stroke-linecap="round">
+    <path d="M54 20C45 9 25 10 15 23C5 36 9 57 23 65C34 72 47 69 55 61"/>
+    <path d="M61 35C54 26 40 27 33 36C26 45 29 59 39 65C47 70 57 67 63 61"/>
+  </g>
+  <g fill="#263d34">
+    <text x="83" y="41" font-family="Georgia, serif" font-size="39" letter-spacing="-1">Common</text>
+    <text x="84" y="77" font-family="Arial, sans-serif" font-style="italic" font-size="35" letter-spacing="1">Canvas</text>
+  </g>
+</svg>

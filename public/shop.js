@@ -5,6 +5,7 @@
   if (!form) return;
 
   const sizeError = document.querySelector("#size-error");
+  const feedback = document.querySelector("#product-feedback");
   const bagCount = document.querySelector("#bag-count");
   const bagStatus = document.querySelector("#bag-status");
   const bagItems = document.querySelector("#bag-items");
@@ -30,6 +31,7 @@
     const selected = form.querySelector('input[name="size"]:checked');
     if (!selected || !sizes.includes(selected.value)) {
       sizeError.hidden = false;
+      if (feedback) feedback.textContent = "";
       form.querySelectorAll('input[name="size"]').forEach((input) => {
         input.setAttribute("aria-invalid", "true");
       });
@@ -42,6 +44,7 @@
     renderBag();
     const itemWord = bag.length === 1 ? "item" : "items";
     bagStatus.textContent = `Added a white T-shirt in size ${selected.value}. Your demo bag has ${bag.length} ${itemWord}.`;
+    if (feedback) feedback.textContent = bagStatus.textContent;
   });
 
   form.addEventListener("change", () => {
@@ -56,6 +59,7 @@
     renderBag();
     bagStatus.textContent =
       "Your demo bag is empty. Choose a size to try it again.";
+    if (feedback) feedback.textContent = bagStatus.textContent;
     form.querySelector('input[name="size"]:checked')?.focus();
   });
 })();
