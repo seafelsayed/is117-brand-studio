@@ -53,7 +53,7 @@ A simple original SVG wordmark is enough. Show small-size and one-color presenta
 | Original SVG logo                                 | [SVG proposal](public/assets/common-canvas-proposal.svg), [review board](public/explorations/logo.html); learner approved: “keep it.”                                                                                       |
 | Monochrome and small-size variants                | Same one-color SVG; proposed navigation presentation 190 × 44 px.                                                                                                                                                           |
 | Logo review at actual use size                    | AI inspected actual 190 × 44 px navigation render and enlarged one-color render; learner approved “keep it.”                                                                                                                |
-| Shared palette, typography, spacing, and assets   | Not chosen yet                                                                                                                                                                                                              |
+| Shared palette, typography, spacing, and assets   | Chosen B implementation: cream #f7f3e9, dark green #263d34, soft green #e2e7dc, warm accent #dfc7b2; Georgia + Arial italic/body; shared spacing tokens in public/styles.css; assets/wordmark.svg.                          |
 
 ## Ethical persuasion
 
@@ -82,9 +82,9 @@ Keep when:
 
 Write a short result and link only evidence that exists. A passing browser check is evidence for its assertions, not customer research or proof of full accessibility.
 
-| Spec ID   | Files           | Issue / PR                                                                                      | Actual checks and observations                                                                                                                     |
-| --------- | --------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BRAND-001 | Not changed yet | [Issue #1](https://github.com/seafelsayed/is117-brand-studio/issues/1); branch `feat/brand-001` | Formatting/lint and 7 server tests pass; browser suite blocked by macOS sandbox. Learner saw shirt page and confirmed bag contents after guidance. |
+| Spec ID   | Files                                                                                                                          | Issue / PR                                                                                                                                                       | Actual checks and observations                                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| BRAND-001 | public/index.html, public/styleguide.html, public/styles.css, public/shop.js, public/assets/wordmark.svg, public/explorations/ | [Issue #1](https://github.com/seafelsayed/is117-brand-studio/issues/1), [PR #2](https://github.com/seafelsayed/is117-brand-studio/pull/2), branch feat/brand-001 | Formatting/lint and 7 server tests pass; manual Chrome no-size and M-add checks pass. GitHub CI pending; learner observations below. |
 
 ## Later
 
@@ -94,7 +94,7 @@ No follow-up is selected. After keeping `BRAND-001`, choose one next cycle: perh
 
 - Shared `public/styles.css` and `public/assets/wordmark.svg` now drive storefront, guide, and studio identity. Storefront adds optional styling cards, approved message, and adjacent live bag feedback. Guide shows actual chosen identity and shared components.
 - Prepared formatting and lint passed; all 7 server tests passed on rerun with network permission. Full browser suite remains blocked by the macOS Chromium launch sandbox, not reported as passed.
-- Actual Chrome observation: adding without a size displayed the size error and left bag at 0. Selecting M and adding produced bag count 1, size-M item, and adjacent confirmation. Learner interpretation pending.
+- Actual Chrome observation: adding without a size displayed the size error and left bag at 0. Selecting M and adding produced bag count 1, size-M item, and adjacent confirmation. Learner interpretation recorded below after an AI example.
 - AI inspected storefront, guide, and studio header/hero at 400px in Chrome; desktop inspection remains partial due browser control interruptions. Full prepared browser/accessibility result pending GitHub CI.
 - Persuasion reference: https://www.influenceatwork.com/7-principles-of-persuasion/ (official overview read); applications are design hypotheses.
 
