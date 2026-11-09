@@ -110,3 +110,61 @@ No follow-up is selected. After keeping `BRAND-001`, choose one next cycle: perh
 
 - [Live storefront](https://seafelsayed.github.io/is117-brand-studio/), [style guide](https://seafelsayed.github.io/is117-brand-studio/styleguide.html), [successful publishing run](https://github.com/seafelsayed/is117-brand-studio/actions/runs/41559598925).
 - Published site loaded; no-size submission showed error with bag 0; selecting M produced bag 1 and adjacent confirmation. Verified by AI in the live browser.
+
+## Research
+
+**RESEARCH-001 · Reviewed sources November 9, 2026 · AI-drafted research synthesis.**
+This continues the existing Common Canvas Brand Studio record and preserves its chosen audience and identity. Website observations below are from retrieved product-page text, not customer interviews or a visual usability test. Interpretations are hypotheses, not evidence of buyer behavior. [Implementation issue #3](https://github.com/seafelsayed/is117-brand-studio/issues/3) tracks this documentation work; it is not a peer-feedback issue.
+
+### Three-site comparison
+
+All sources accessed November 9, 2026. Brand claims are attributed to each retailer and have not been independently verified. No competitor product claims apply to the Common Canvas demo shirt.
+
+| Source                                                                                                                  | Observation from the source                                                                                                                                                            | What it suggests for Common Canvas                                                                                                                                                                                                                                                      |
+| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [UNIQLO — SUPIMA Cotton T-Shirt](https://www.uniqlo.com/us/en/products/E455365-000/00)                                  | The product description emphasizes SUPIMA cotton, a balanced classic silhouette, and wearing the tee alone or layered. Materials and care are available alongside product information. | Everyday versatility can give a plain tee a clear purpose. Show understandable styling possibilities and useful controls; do not copy unsupported fabric or fit claims. This may serve someone seeking an uncomplicated wardrobe base.                                                  |
+| [Everlane — Essential Organic Crew, White](https://www.everlane.com/products/mens-essential-organic-crew-uniform-white) | The page names the product an organic essential, supplies model height and size, and includes a certifications section identifying OCS100.                                             | Specific product context may help a detail-oriented shopper evaluate a basic. Common Canvas should distinguish known demo details from unknown materials and certifications, rather than borrowing an ethical halo. Certification labels alone do not prove every sustainability claim. |
+| [Buck Mason — White Slub Curved Hem Tee](https://www.buckmason.com/products/white-slub-curved-hem-tee)                  | The page lists a $48 price, describes USA-grown cotton and production at its Mohnton, Pennsylvania mill, and offers a size/fit guide.                                                  | A basic can be positioned through provenance and construction. That premium route requires supporting facts; Common Canvas currently has stronger grounds for a style-and-belonging story. Price is a dated observation, not a lasting comparison.                                      |
+
+The shared product category is a plain white tee, but the reasons to choose differ: everyday versatility, documented product context, and a manufacturing story. These page observations suggest possible audiences; they do not establish actual customer demographics or sales effectiveness.
+
+### Two positions and the chosen audience
+
+| Position                                                               | Visitor need and proposed promise                                                                                                                                                           | Tradeoff                                                                                                                       |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| A — Personal style without pressure (existing Common Canvas direction) | College students dressing for class want an outfit starting point that leaves room for their own expression. A simple starting point for expressing your style, without pressure to fit in. | Welcoming copy can feel generic unless the page gives concrete, optional styling ideas.                                        |
+| B — A quick everyday uniform (comparison hypothesis)                   | Students rushing to class want fewer outfit decisions. A straightforward tee-centered outfit starting point.                                                                                | A prescribed uniform could weaken the existing emphasis on freedom and belonging. Speed and convenience are untested benefits. |
+
+**Chosen audience:** retain position A and the existing primary audience: college students dressing for class who want to look put together and express their style without feeling judged. This choice reuses the Brand Studio agreement; the new competitor review does not independently validate it. Position B remains a contrasting hypothesis, not an approved rebrand.
+
+### Two short persona hypotheses
+
+- **Primary — style explorer before class:** wants an outfit that feels personal; may worry about judgment. The page should offer a white tee as an adaptable base with optional styling ideas. These needs are existing project assumptions, not an interviewed person's biography.
+- **Secondary — rushed student before class:** wants to get dressed with little effort. The page should make the tee and next action easy to find. A possible concern is spending too much time choosing an outfit (new AI hypothesis; not yet validated or adopted as a recorded learner choice).
+
+### Look, brand character, and honest persuasion
+
+Reuse the chosen postmodernist direction, rounded forms, cream/dark-green palette, and shared Georgia/Arial typography already recorded above. Preserve clear hierarchy and easy navigation so expressive styling supports the student's task. Do not infer a competitor's rendered layout from extracted page text.
+
+Common Canvas keeps the **Everyperson** character: welcoming, with a calm, casual, encouraging voice. The existing headline, “Your style. Your pace.”, connects that character to voluntary self-expression. An archetype describes the brand, not every customer.
+
+- **Liking:** the existing “No dress code. Make it yours.” message communicates acceptance. Its proposed benefit is lower social pressure; that effect has not been measured.
+- **Reciprocity:** the three existing optional styling ideas offer useful inspiration without signup or purchase. They should never imply an obligation to buy.
+- Keep the demo-bag boundary visible. No real purchase, payment, or order is offered. Do not invent testimonials, scarcity, sales counts, certification, material quality, fit guarantees, or conversion results. Required size selection is validation, not evidence of a persuasion principle.
+
+### Assumptions, peer review, and next question
+
+**Assumptions to test:** students value a welcoming style message; styling ideas help them decide; the expressive visual direction remains easy to navigate; the rushed-student alternative is meaningfully different. The three competitor pages establish what retailers communicate, not whether these assumptions are true. No customer interviews or new student usability observations are claimed.
+
+**Open question:** Do classmates understand Common Canvas as a flexible starting point for personal style, or as a prescribed outfit? Ask one classmate to explain the intended audience back and challenge one specific site observation.
+
+**Real peer feedback — pending:**
+
+- Classmate-authored feedback issue URL: pending; add the actual link after review.
+- Observation challenged and classmate's explanation of the audience: pending.
+- Response, resulting revision, or reason for retaining the decision: pending.
+- Required constructive issues on classmates' projects: pending real class participation; no issues are fabricated here.
+
+**Change note:** added a sourced three-site comparison and two positioning hypotheses to the existing record, retained the Common Canvas audience and brand, and made research limits and pending peer evidence explicit. This documentation does not certify completion of the in-class review requirement.
+
+**Submission links:** [Research record](https://github.com/seafelsayed/is117-brand-studio/blob/docs/tshirt-research/SPEC.md#research) · [Repository](https://github.com/seafelsayed/is117-brand-studio) · [Existing storefront](https://seafelsayed.github.io/is117-brand-studio/) · [Existing live style guide](https://seafelsayed.github.io/is117-brand-studio/styleguide.html). Feedback issue: pending real classmate review.

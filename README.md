@@ -2,6 +2,8 @@
 
 **Project status:** BRAND-001 is kept and merged into main: Common Canvas, a welcoming white-T-shirt brand for college students expressing their style. Storefront, live style guide, researched hero explorations, original SVG logo, and demo bag are built. Prepared checks passed in GitHub CI. [Pull request #2](https://github.com/seafelsayed/is117-brand-studio/pull/2) is merged. Published and verified: [Common Canvas storefront](https://seafelsayed.github.io/is117-brand-studio/) · [Live style guide](https://seafelsayed.github.io/is117-brand-studio/styleguide.html).
 
+**T-shirt Research:** [Research in the existing project record](SPEC.md#research) compares three clothing sites, two positions, and two persona hypotheses while retaining Common Canvas. Real classmate feedback is still pending; [issue #3](https://github.com/seafelsayed/is117-brand-studio/issues/3) tracks implementation only.
+
 **The same white T-shirt can carry very different meanings.** Develop a brand for it with an AI collaborator, then make those decisions visible in a professional website and a live style guide.
 
 This template starts with a working, deliberately neutral storefront. Your audience, name, promise, logo, voice, and visual direction are **not chosen yet**. You make the decisions; the agent helps you explore, build, check, and revise them.
