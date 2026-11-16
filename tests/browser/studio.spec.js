@@ -63,6 +63,7 @@ for (const route of [
   "/styleguide.html",
   "/studio.html",
   "/research.html",
+  "/plan.html",
 ]) {
   test(`page integrity and automated accessibility: ${route}`, async ({
     page,

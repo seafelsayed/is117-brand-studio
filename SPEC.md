@@ -178,3 +178,93 @@ The [published group research record](https://seafelsayed.github.io/is117-brand-
 ### Reported review update
 
 Seaf reports Varnit Monga opened an original source, checked the finding-to-decision connection, and recommended no changes. This is an owner report, not independent confirmation by Varnit. The specific source/IDs, reasoning, audience explanation and actual review date were not supplied. No revision or reviewer retry is claimed. Remaining contribution evidence stays open in issue #6.
+
+## Plan — T-shirt (TSHIRT-PLAN-001)
+
+Prepared November 16, 2026. Due November 17, 2026 at 8:30 a.m. Eastern. This extends the existing Common Canvas SPEC and style work. It plans the next Build; it does not claim checkout or SQLite already exists.
+
+### Audience, promise and current boundary
+
+Keep the existing audience hypothesis: college students dressing for class who want to express their own style without pressure. Promise: a simple starting point for expressing your style, without pressure to fit in. The earlier T-shirt research suggests useful styling possibilities and clear product information; competitor pages do not validate demand or guarantee usability.
+
+Current prototype: a white-tee page with size selection and a temporary demo bag. The bag resets on reload; the static server rejects POST requests and does not store orders. No simulated checkout, SQLite backend, customer study or persistence result is claimed. This plan supersedes the earlier “no checkout or persistence” boundary only for the proposed next Build; BRAND-001's historical results remain unchanged. Real payments, fulfillment, accounts and manufactured-product claims stay outside scope.
+
+### Two concise approaches
+
+**A — Guided product-to-review flow (recommended):** retain the expressive product hero and optional styling ideas; choose size/quantity, add to bag, review an order summary, then explicitly confirm a simulated order. Show the demo reference and a local order-history lookup afterward. Benefit: review separates exploration from the final action and lets a visitor check the selection. Risk: an extra step may slow a rushed student; keep a clear progress label and back/edit action.
+
+**B — Compact one-page flow:** use the same promise, product facts, styling ideas, size/quantity, review details and simulated confirmation, but place the expanded summary and checkout together below the product. Benefit: fewer page changes. Risk: the long page and adjacent actions may hide the distinction between editing and placing a demo order, especially on phones.
+
+Both approaches must use identical content, fictional price, available demo sizes, backend validation and SQLite data model. Only arrangement/step structure differs. A is an AI recommendation because explicit review fits a low-pressure promise; a student's reasoned choice and the classmate's story explanation are still needed. Do not record either version as built or tested at Plan.
+
+### Five user stories, essential features and observable checks
+
+All checks below are planned and not run for this feature. Existing BRAND-001 checks do not prove checkout or persistence.
+
+#### S1 — Choose a tee without a prescribed style
+
+As a student dressing for class, I want optional styling ideas and clear size/quantity controls so I can choose a starting point that feels like me.
+
+Essential features: existing styling cards, known white color, demo sizes S/M/L/XL, quantity 1–10, fictional $28 USD unit price, visible required-size error and keyboard-accessible controls. No invented fabric/fit guarantee.
+
+Observable check: a reviewer explains one styling idea as optional. Trying to add without a size leaves the bag unchanged and exposes a useful error. Choosing M and quantity 2 adds exactly two M tees and shows $56 before the simulated checkout. Record actual outputs later; misunderstanding or an incorrect count fails the check.
+
+#### S2 — Review and edit before confirming
+
+As a shopper, I want to review size, quantity and the demo total and go back to edit them so I can correct mistakes without pressure.
+
+Essential features: bag summary, edit/remove actions, explicit review step or section, clear back action, and an empty-bag state that cannot proceed. Display fictional demo pricing and no payment/fulfillment statement near confirmation.
+
+Observable check: choose M × 2, open review, change to L × 1, and verify all displayed summaries show L, quantity 1 and $28. Remove the final item and verify checkout is unavailable with a useful explanation. No order may be written before final confirmation.
+
+#### S3 — Complete simulated checkout safely
+
+As a student trying the store, I want an explicit simulated checkout and confirmation reference so I understand what happened without making a real purchase.
+
+Essential features: final order summary, a clearly labeled “Place demo order” action, synthetic email input using demo@example.test, no card/address fields, server-side validation and a reference returned only after successful database commit. Validate the email for the exercise but do not save, send or log it. Use synthetic data only; no signup, email delivery or payment integration.
+
+Observable check: valid L × 1 and synthetic email produce exactly one committed demo order and a reference. Invalid email/size, quantities 0 or 11, and an empty order produce a validation error with no new database row. Disable repeat confirmation while a request is pending and use an idempotency token so retry/double-click returns the original order rather than duplicating it. A database/server failure must show failure without a success reference; the visitor retains a way to retry.
+
+#### S4 — Save, stop, restart and reopen with SQLite
+
+As a returning demo shopper, I want to reopen my saved order reference after the server restarts so I can see that it was stored by the backend.
+
+Essential features: a working local Node 24+ SQLite service, database file outside public files, persistent orders/order-items, order lookup/history, validation and atomic inserts. Browser storage alone cannot satisfy this story. Keep saved unit prices/totals as order snapshots, rather than recalculating historical orders from a changed catalog.
+
+Observable check: create M × 2 at $28, copy its reference and confirm a $56 order in SQLite. Stop the server, restart it using the same explicit database path, reopen history and retrieve the same reference/items/total. Clear browser storage or use another browser session to ensure the result comes from the backend. Change the catalog price in a controlled test and confirm the old order remains $56 while a new order uses the new price. A missing database row or reliance on localStorage fails the check. Record command, reference, database location, actual observed result and limitation in this same SPEC during Build.
+
+#### S5 — Use and explain the flow on a phone and keyboard
+
+As a keyboard or phone visitor, I want readable controls, visible focus and understandable errors so I can review and complete the simulated order.
+
+Essential features: responsive layout, descriptive labels, skip link, visible focus, associated errors/status messages, preserved selections on back/edit, and an obvious local-SQLite versus static-preview mode label.
+
+Observable check: at 375px and desktop width, complete S1–S4 using Tab/Shift+Tab/Enter, with no hidden focused controls or page overflow. Ask a classmate to explain S4 and how its restart check differs from refreshing browser storage. Record their real question and improve the plan accordingly; request their retry of an accepted change. Automated accessibility checks supplement the walkthrough; they do not prove all accessibility or audience fit.
+
+### Planned backend and data contract
+
+Use the professor's [Campus Cotton SQLite starter](https://kaw393939.github.io/is117-demo-days/examples/submissions/run-examples.html), accessed November 16, 2026, as the reference implementation. Its guide documents Node 24+, node:sqlite, server-side validation/prices, and SQLite storage outside public files. It instructs starting with Campus Cotton A and demonstrating save → stop → restart → reopen. The guide was read; the starter has not been run or adapted in this checkpoint.
+
+During Build, inspect and preserve a working copy of the supported starter, then adapt its content and flow to Common Canvas. Keep the current storefront working until that slice passes. Reuse the existing static HTML/CSS/JavaScript identity; no framework migration is planned.
+
+Proposed app API names (not yet implemented): GET /api/products for authoritative demo catalog; POST /api/orders to validate and commit a synthetic order; GET /api/orders/:reference and a local demo-history endpoint to read saved records. The chosen starter may use different route names; map and document the actual contract before coding rather than claiming these are its current routes.
+
+Proposed schema: orders(id, reference UNIQUE, request_token UNIQUE, created_at, total_cents); order_items(id, order_id foreign key, product_id, size, quantity, unit_price_cents). Use integer cents, prepared statements, allowlisted size/product, bounded integer quantities and one transaction for order/items. The server computes totals from its catalog and ignores or rejects client price tampering. Test a request that submits a $1 total: the server must preserve the $28 unit price or reject the request, never trust the submitted total. Do not store email or payment details.
+
+Development setup to document during Build: bind locally to 127.0.0.1 and use an explicit SQLite path outside public/; preserve that path across restarts. Do not expose the database file through HTTP or commit generated databases. Include a synthetic fixture and a reproducible setup command. A static GitHub Pages prototype may remain available for visual review, but it must state that it has no SQLite service. Provide the local backend code/setup and restart evidence as the working SQLite demonstration; any public backend deployment is a separate future decision. Do not deploy the classroom-only starter as a real store.
+
+### Carry forward brand, visuals and two honest persuasion elements
+
+Keep Common Canvas, the Everyperson character and calm/casual/encouraging voice. Reuse the selected postmodernist rounded forms, original wordmark, cream/dark-green palette, warm accents and shared Georgia/Arial styling from the live style guide. Both approaches retain identical branding so the flow comparison is fair.
+
+**Liking:** keep “No dress code. Make it yours.” as a welcoming invitation. Intended benefit is less social pressure, not a measured result. Do not prescribe an identity or make belonging depend on buying.
+
+**Reciprocity:** retain the three freely available styling ideas without signup or purchase. They offer inspiration without an obligation. Do not invent testimonials, scarcity, stock, quality certifications or conversion claims. Review/back/edit support voluntary decisions; required size validation alone is not a persuasion principle.
+
+### Build order, peer feedback and evidence
+
+Build in small slices: inspect/run the unchanged starter; adapt product data and branding; implement selection/review/checkout using one validated SQLite service; exercise positive/negative and restart cases; compare A/B with identical content; collect the classmate's story explanation and useful question; revise and retry accepted feedback. Record actual results, not this planned checklist as completed evidence.
+
+Current feedback status: [review-request issue #8](https://github.com/seafelsayed/is117-brand-studio/issues/8) is open; no classmate feedback specific to this T-shirt Plan has been supplied. Varnit's earlier business Research and Portfolio Plan approvals are separate reviews and are not carried over as a T-shirt Plan review. Publish a review request in this repository. Ask a classmate to explain S4 and identify one failure its check would catch, then ask a useful question about the plan. For incoming issues, record implement/investigate/defer/decline with a reason, a linked documentation/code commit, actual verification and reviewer retry before closing a resolved issue. If feedback remains missing, contact the instructor promptly to arrange a reviewer.
+
+AI assistance: Codex inspected the existing SPEC, storefront/server boundary and course starter guide, then drafted these approaches, stories, backend proposal and checks. The plan is AI-assisted and subject to Seaf's decisions. No classmate question, student explanation, backend implementation, checkout result, SQLite restart success or reviewer retry is fabricated. This checkpoint adds documentation; it does not submit Canvas coursework.
