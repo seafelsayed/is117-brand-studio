@@ -1,0 +1,73 @@
+.research-record {
+  max-width: 76rem;
+  padding-block: 3rem;
+}
+
+.research-record h1 {
+  max-width: 22ch;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+}
+
+.research-record h2 {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.research-record h3 {
+  margin-top: 1.7rem;
+  font-size: 1.3rem;
+}
+
+.research-record p,
+.research-record li {
+  max-width: 82ch;
+  line-height: 1.75;
+}
+
+.research-record p {
+  margin-block: 1rem;
+}
+
+.research-record article {
+  border-top: 1px solid currentcolor;
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.research-record ul,
+.research-record ol {
+  padding-left: 1.5rem;
+}
+
+.research-record li {
+  margin-block: 0.8rem;
+}
+
+.research-record a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
+}
+
+.research-record section {
+  scroll-margin-top: 1.5rem;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.research-record table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 42rem;
+}
+
+.research-record th,
+.research-record td {
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid currentcolor;
+  padding: 0.8rem;
+  line-height: 1.6;
+}

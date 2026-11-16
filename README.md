@@ -4,6 +4,8 @@
 
 **T-shirt Research:** [Research in the existing project record](SPEC.md#research) compares three clothing sites, two positions, and two persona hypotheses while retaining Common Canvas. Real classmate feedback is still pending; [issue #3](https://github.com/seafelsayed/is117-brand-studio/issues/3) tracks implementation only.
 
+**Group Business Research:** [Published research record](https://seafelsayed.github.io/is117-brand-studio/research.html) continues Common Canvas as a proposed business for Seaf Elsayed and Varnit Monga. Three original sources, evidence/assumptions, two positions, two persona hypotheses, traceable decisions/checks, and proposed member responsibilities are documented. Current member contributions and classmate review remain pending in [issue #6](https://github.com/seafelsayed/is117-brand-studio/issues/6). [Prior T-shirt review #5](https://github.com/seafelsayed/is117-brand-studio/issues/5) is preserved as historical evidence, not a completed Group Business review.
+
 **The same white T-shirt can carry very different meanings.** Develop a brand for it with an AI collaborator, then make those decisions visible in a professional website and a live style guide.
 
 This template starts with a working, deliberately neutral storefront. Your audience, name, promise, logo, voice, and visual direction are **not chosen yet**. You make the decisions; the agent helps you explore, build, check, and revise them.
